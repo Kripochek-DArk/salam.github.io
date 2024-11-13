@@ -5,17 +5,38 @@
     <title>Title</title>
     <style>
     body{
-        justify-content: center;
         display: flex;
+        justify-content: center;
+    }
+    .container{
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        color: red;
+    
+    }
+    li{
+        list-style-type: none;
+    }
+    ul{
+        padding-left: 0;
+        text-align:center;
+    }
+    li:hover{
+        font-size: 18px;
+        transition: 1s;
     }
     </style>
 </head>
 <body>
-    <a href="index.html" ><img src="red.png" alt="картинка ушла" style="width:30%"></a>
-    <ul>
-        <li><a href="index_2.html">Песня шрека</a></li>
-        <li><a href="index_3.html">Файлы</a></li>
-        <li><a href="index_4.html">Праздники</a></li>
-    </ul>
+    <div class="container">
+        <a href="index.html" ><img src="red.png" alt="картинка ушла" style="width:100px"></a>
+        <ul>
+            <li><a href="index_2.html">Песня шрека</a></li>
+            <li><a href="index_3.html">Файлы</a></li>
+            <li><a href="index_4.html">Праздники</a></li>
+        </ul>
+    </div>  
 </body>
 </html>
