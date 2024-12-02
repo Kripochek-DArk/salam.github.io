@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        label,input,option{
+    font-size: 20px;
+    color: black;
+    font-family: "Oswald", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 15px;
+    }   
+    </style>
+</head>
+<body>
+    <a href="index.html" ><img src="red.png" alt="картинка ушла" style="width:100px"></a>
+    <div class="container" style="flex-direction: column;align-items: center;"> 
+        <h2>Форма ввода</h2>
+        <form id="myForm" style="align-items: center;">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label>Пол:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Мужской</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label><br>
+            <label for="hobby">Выберите хобби:</label>
+            <select id="hobby">
+                <option value="reading">Чтение</option>
+                <option value="sports">Спорт</option>
+                <option value="music">Музыка</option>
+            </select><br>
+            <input type="submit" value="Отправить" >
+        </form>
+        
+    </div>
+    <script>
+        document.getElementById('myForm').onsubmit = function(e) {
+            e.preventDefault();
+            alert('Форма отправлена!');
+        };
+    </script>
+</body>
+</html>
